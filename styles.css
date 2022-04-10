@@ -1,0 +1,92 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.body-container {
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.right-container img{
+    height: 600px;
+    margin-top: 70px;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.left-container h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+span {
+    color: #0183FF;
+    font-weight: bolder;
+}
+
+.left-container p {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.github-btn {
+    border-radius: 2px;
+    border: none;
+    background: #0183FF;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    height: 48px;
+    width: 180px;
+    padding: .4em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.video-btn {
+    border-radius: 2px;
+    border: none;
+    background: #1DCA73;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    height: 48px;
+    width: 180px;
+    padding: .4em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 12px;
+}
